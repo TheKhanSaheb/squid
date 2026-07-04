@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimodal CVD Risk Prediction | Khan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html#home" class="nav-logo">Khan</a>
+      <ul class="nav-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="project-detail-hero">
+    <div class="container">
+      <h1>Multimodal CVD Risk Prediction</h1>
+      <p>Siamese DenseNet201 for Cardiovascular Disease Risk Assessment</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+
+      <div class="detail-block">
+        <h2>Main Technology Stack</h2>
+        <p>Python, PyTorch, Siamese DenseNet201, OpenCV, Scikit-learn, SHAP / Grad-CAM (XAI), Kaggle T4 GPU.</p>
+      </div>
+
+      <div class="detail-block">
+        <h2>Brief Description</h2>
+        <p>
+          A multimodal deep learning pipeline that predicts cardiovascular
+          disease (CVD) risk by jointly analyzing retinal fundus images and
+          carotid intima-media thickness (CIMT) data using a Siamese
+          DenseNet201 architecture, trained on the China-Fundus-CIMT dataset.
+          The model achieved an AUC of 0.9168, surpassing the benchmark
+          reported in the original source paper. The project also includes
+          ablation studies, statistical significance testing, and
+          publication-ready methodology and figures written in IEEE JBHI format.
+        </p>
+      </div>
+
+      <div class="detail-block">
+        <h2>Challenges Faced</h2>
+        <ul>
+          <li>Aligning and fusing two very different data modalities (retinal images and CIMT vitals) into a single learnable architecture.</li>
+          <li>Training a deep Siamese network efficiently within Kaggle's free T4 GPU memory and time limits.</li>
+          <li>Designing ablation experiments and statistical tests rigorous enough for IEEE JBHI-level review.</li>
+        </ul>
+      </div>
+
+      <div class="detail-block">
+        <h2>Future Improvements</h2>
+        <ul>
+          <li>Validate the model on external, multi-center datasets to test generalizability.</li>
+          <li>Explore lighter backbone architectures for faster inference in clinical settings.</li>
+          <li>Extend explainability analysis with counterfactual methods alongside Grad-CAM/SHAP.</li>
+        </ul>
+      </div>
+
+      <div class="detail-links">
+        <!-- Replace with your real links -->
+        <a href="#" target="_blank" class="btn btn-primary">Live Project / Demo</a>
+        <a href="#" target="_blank" class="btn btn-outline">GitHub Repository</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Khan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
